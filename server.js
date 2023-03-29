@@ -15,10 +15,12 @@ app.use(express.json())
 // db connecting
 require('./dbConnection')
 
-
 // api
-app.use('/api/usersdata' , require('./routes/UserRoutes'))
+app.use('/api/usersdata', require('./routes/UserRoutes'))
 
+app.get('/', (req, res) => {
+  res.send('Node App Running on Vercel')
+})
 
 const port = process.env.PORT || 9001
 // const PORT = process.env.PORT || 8080
