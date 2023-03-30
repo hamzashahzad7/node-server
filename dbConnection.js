@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-const mongodb = process.env.DB_URL
+DB_URL = "mongodb+srv://hamzamughal:Clientpro1@cluster0.vf1dyip.mongodb.net/MyCompanyForm?retryWrites=true&w=majority"
+const mongodb = DB_URL
 mongoose.connect(mongodb)
 
 const mongodbConnection = mongoose.connection

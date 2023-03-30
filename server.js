@@ -22,6 +22,4 @@ app.get('/', (req, res) => {
   res.send('Node App Running on Vercel')
 })
 
-const port = process.env.PORT || 9001
-// const PORT = process.env.PORT || 8080
-app.listen(port, console.log(`Backend server is running at Port ${port}`))
+app.listen(9001, console.log(`Backend server is running at Port`))
