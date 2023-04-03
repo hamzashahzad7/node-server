@@ -12,7 +12,7 @@ app.use(express.json())
 require('./dbConnection')
 
 // api
-app.use('/api/usersdata', require('./routes/UserRoutes'))
+app.use('/apiData', require('./routes/UserRoutes'))
 
 app.get('/', (req, res) => {
   res.send('Node App Running on Vercel')
